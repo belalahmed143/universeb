@@ -1,0 +1,36 @@
+{% extends 'base.html'%} {% block content %}
+<div class="anotherpage_height"></div>
+
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>Expert Team</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience_zone">
+      <div class="row">
+        {% for i in demo %}
+        <div class="col-lg-4 col-md-6">
+          <div class="experience_zone_item">
+            <div class="img">
+              <img src="{{i.image.url}}" alt="" class="img-fluid" />
+            </div>
+
+            <div class="text">
+              <h3>{{i.name}}</h3>
+              <h4>{{i.employee_post}}</h4>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+{% endblock %}

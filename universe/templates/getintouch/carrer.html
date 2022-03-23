@@ -1,0 +1,55 @@
+{% extends 'base.html'%} {% block content %}
+<div class="anotherpage_height"></div>
+
+
+
+<section id="career">
+
+    <div class="container">
+
+        
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="header_pert">
+                    <h2>Career</h2>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        
+        <div class="career_content">
+
+            {% for i in carrerdata %}
+                <div class="career_part">
+                   
+                    <h4>{{i.job_post}}</h4>
+                    <ul>
+                        <li>Salery: {{i.sallery}}</li>
+                        <li>Posted at : {{i.postedat}}</li>
+                    </ul>
+
+                    <a href="{{i.get_url}}">Show Details & Apply</a>
+
+                    
+                </div>
+                {% endfor %}    
+
+
+            
+               
+            
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div class="section_height"></div>
+{% endblock %}

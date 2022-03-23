@@ -1,0 +1,44 @@
+{% extends 'base.html'%} {% block content %}
+
+<div class="anotherpage_height"></div>
+
+<section id="Berger_Home_Diaries">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>Project</h2>
+          <p>
+            We believe that homes are a reflection of the people who live
+            inside, where everything looks and works the way you want it to.
+            That’s why we’ve gathered tons of different home ideas, from home
+            decoration ideas to organizing tips, to help you build your ideal
+            home.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for i in pro %}
+      <div class="col-lg-4 col-md-6">
+        <div class="Berger_Home_Diaries_content">
+          <div class="img">
+            <img src="{{i.image.url}}" class="img-fluid" alt="" />
+
+            <div class="text">
+              <a href="{{i.get_url}}">{{i.name}}</a>
+              <p>{{i.desc}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+{% endblock %}

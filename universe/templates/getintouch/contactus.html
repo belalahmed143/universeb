@@ -1,0 +1,74 @@
+{% extends 'base.html'%} {% block content %}
+
+<div class="anotherpage_height"></div>
+
+    <section id="contact_us">
+
+        <div class="container">
+
+            
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="header_pert">
+                        <h2>Contact Us</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact_us_content">
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+    
+                        <div class="map">
+    
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1343986519714!2d90.40654375023882!3d23.74258628451766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b88b99ec459b%3A0x3ab2d0298794bd47!2s15%20Baily%20Rd%2C%20Dhaka%201217!5e0!3m2!1sen!2sbd!4v1642780720862!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    
+                        </div>
+    
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="office_address">
+
+                            {% for contact in contact%}
+
+                            <h4>Corporate Office:</h4>
+                            <p>{{contact.road}}</p>
+                            <p>{{contact.address}}</p>
+                            <p>{{contact.postcode}}</p>
+
+
+                            <a href="tel:{{contact.phone}}">Mobile :{{contact.phone}}</a>
+                            <a href="tel:{{contact.another_phone}}">Mobile : {{contact.another_phone}}</a>
+                            <a href="mailto:{{contact.email}}">Mail : {{contact.email}}</a>
+                            <a href="mailto:{{contact.another_email}}">Mail : {{contact.another_email}}</a>
+                            <a href="mailto:ccclbd21@gmail.com">Web : www.bdcccl.com</a>
+
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+        
+<div class="section_height"></div>
+
+
+{% endblock %}

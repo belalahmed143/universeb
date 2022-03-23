@@ -1,0 +1,125 @@
+#Category_part .row.custome_raw {
+    background: #FFF;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+#Category_part .Category_menu {
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+
+#Category_part .Category_menu h4 {
+    font-size: 20px;
+    color: #FFF;
+    background: var(--bg_color);
+    border-radius: 20px 0 0 0;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.Category_menu ul {
+    padding: 20px 0;
+}
+
+.Category_menu ul li {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.Category_menu ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.Category_menu ul li a {
+    width: 100%;
+}
+
+.Category_menu ul li a svg {
+    float: right;
+    display: none;
+}
+
+.Category_menu ul li a svg path {
+    fill: var(--top_heading_color);
+}
+
+.Category_menu ul li a:hover {
+    color: var(--top_heading_color);
+}
+
+.Category_menu ul li a:hover svg {
+    display: block;
+}
+
+/* Category_content */
+
+.Category_content_item .Category_content_item_content .img {
+    margin-bottom: 20px;
+}
+
+.Category_content_item .Category_content_item_content img {
+    height: 145px;
+    width: auto;
+    object-fit: cover;
+}
+
+.Category_content .header_part {
+    justify-content: space-between;
+    padding: 17px;
+    border-radius: 0 20px 0 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.Category_content h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--top_heading_color);
+}
+
+.Category_content .header_part p {
+    word-spacing: 2px;
+}
+
+.Category_content .header_part p span {
+    color: var(--top_heading_color);
+}
+
+.Category_content_item {
+    padding: 20px;
+    text-align: center;
+}
+
+.Category_content_item .Category_content_item_content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.Category_content_item .Category_content_item_content a {
+    background: var(--top_heading_color);
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 0px;
+    color: var(--bg_color);
+    font-weight: 600;
+    display: block;
+}
+
+.Category_content_item .Category_content_item_content a:hover {
+    background: var(--bg_color);
+    color: var(--top_heading_color);
+}
+
+.Category_content_item .Category_content_item_content p {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 24px;
+}

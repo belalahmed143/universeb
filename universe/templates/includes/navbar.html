@@ -1,0 +1,143 @@
+<nav class="navbar nav navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'homepage' %}">
+      <img src="https://bdcccl.com/frontend_assets/images/logo.svg" alt="" />
+    </a>
+
+    <button
+      class="Mobile_menu"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end Mobile_menu"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Menu Bar</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navigation navbar-nav m-auto">
+          <li>
+            <a class="nav-link" href="{% url 'homepage' %}">Home</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="{% url 'servicepage' %}">Services</a>
+
+            <ul>
+              <li>
+                <a href="https://bdcccl.com/frontend/service-details/1"
+                  >Construction</a
+                >
+              </li>
+              <li>
+                <a href="https://bdcccl.com/frontend/service-details/2"
+                  >Ready Mix Concrete</a
+                >
+              </li>
+              <li>
+                <a href="https://bdcccl.com/frontend/service-details/3"
+                  >Concrete Products Solid Bricks, Blocks, Pavement</a
+                >
+              </li>
+              <li>
+                <a href="https://bdcccl.com/frontend/service-details/4"
+                  >Retail &amp; Services</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="nav-link" href="https://bdcccl.com/frontend/project"
+              >Project</a
+            >
+          </li>
+
+          <li>
+            <a class="nav-link" href="https://bdcccl.com/frontend/gallery"
+              >Gallery</a
+            >
+          </li>
+
+          <li>
+            <a class="nav-link" href="#">Get in Touch</a>
+            <ul>
+              <li>
+                <a href="{% url 'contactus' %}">Contact Us </a>
+              </li>
+              <li>
+                <a href="{% url 'carrer' %}">Career </a>
+              </li>
+              <li>
+                <a href="{% url 'expert_team' %}">Expert Team </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navigation navbar-nav m-auto">
+        <li>
+          <a class="nav-link" href="{% url 'homepage' %}">Home</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="{% url 'servicepage' %}">Services</a>
+
+          <ul>
+            {% for i in links %}
+            <li>
+              <a href="{{i.get_url}}">{{i.name}}</a>
+            </li>
+
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li>
+          <a class="nav-link" href="{% url 'projectpage' %}">Project</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="{% url 'gallerypage' %}">Gallery</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#">Get in Touch</a>
+          <ul>
+            <li>
+              <a href="{% url 'contactus' %}">Contact Us </a>
+            </li>
+            <li>
+              <a href="{% url 'carrer' %}">Career </a>
+            </li>
+            <li>
+              <a href="{% url 'expert_team' %}">Expert Team </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex search">
+        <a href="{% url 'contactus' %}" class="btn" type="submit">Contact Us</a>
+      </form>
+    </div>
+  </div>
+</nav>

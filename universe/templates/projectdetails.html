@@ -1,0 +1,27 @@
+{% extends 'base.html'%} {% block content %}
+
+<div class="anotherpage_height"></div>
+
+<section id="gallery" class="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>{{single_project.name}}</h2>
+          <div class="img">
+            <img
+              class="img-fluid my-5"
+              src="{{single_project.image.url}}"
+              alt=""
+            />
+          </div>
+          <p>{{single_project.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+{% endblock %}

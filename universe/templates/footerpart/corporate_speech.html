@@ -1,0 +1,63 @@
+{% extends 'base.html'%} {% block content %}
+<div class="anotherpage_height"></div>
+
+<section id="corporate_speech">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>Honorable Speeches</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="Honorable_Speeches_tabs">
+      <div class="accordion" id="accordionExample">
+
+        {% for i in messagemd %}
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#Chairman"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <img
+                src="{{i.name.image.url}}"
+                alt=""
+              />
+              <h4>
+                {{i.name}}
+                <span>{{i.name.postName}}</span>
+              </h4>
+            </button>
+          </h2>
+
+          <div
+            id="Chairman"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+
+              <p>{{i.text}}</p>
+              
+            </div>
+          </div>
+        </div>
+
+        {% endfor%}
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+{% endblock %}

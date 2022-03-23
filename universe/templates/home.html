@@ -1,0 +1,445 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START BANNER PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="banner">
+
+    <div class="banner_slider owl-carousel owl-theme">
+
+      {% for i in slider %}   
+            <div class="item">
+
+           
+
+                <img src="{{i.image.url}}" alt="" class="img-fluid">
+
+                <div class="banner_text">
+                    <h3>We are profesional</h3>
+                    <h1>for your dream project</h1>
+                    <a href="">Crosscountry Construction Limited</a>
+                </div>
+
+               
+
+            </div>
+
+          {% endfor %} 
+                
+          
+
+                
+            
+
+        
+    </div>
+
+</section>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START 24/7-SUPPORT PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="support_24">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 paddinf_zero">
+        <div class="support_24_content bgs">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/worker.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h3>Expert Worker</h3>
+            <p>We have many expert and professional workers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 paddinf_zero">
+        <div class="support_24_content Quality">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/building.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h3>Quality Work</h3>
+            <p>We are a company dedicated to the construction.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 paddinf_zero">
+        <div class="support_24_content Support">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/24.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h3>24/7 Support</h3>
+            <p>Our support team are ready for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Our Product PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Our Services PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="Paint_your_imagination">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>Services</h2>
+          <p>
+            Choose from a wide variety of products made to fit all your needs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for i in links %}
+      <div class="col-lg-6 col-md-6">
+        <div class="Paint_your_imagination_content">
+          <div class="img">
+            <img src="{{i.image.url}}" alt="" class="img-fluid" />
+            <div class="overlay">
+              <a href="{{i.get_url}}">{{i.name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Happy Client PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="happy_client">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 paddinf_zero">
+        <div class="happy_client_content d_flex bgs EXPERT">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/worker.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h4 class="count">100</h4>
+            <p>EXPERT WORKERS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 paddinf_zero">
+        <div class="happy_client_content d_flex bgs HAPPY">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/happy_client.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h4 class="count">290</h4>
+            <p>HAPPY CLIENTS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 paddinf_zero">
+        <div class="happy_client_content d_flex bgs EXPERT">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/compelete_project.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h4 class="count">480</h4>
+            <p>COMPLETED PROJECTS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 paddinf_zero">
+        <div class="happy_client_content d_flex bgs HAPPY">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/running_project.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h4 class="count">405</h4>
+            <p>RUNNING PROJECTS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Berger Home Diaries PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="Berger_Home_Diaries">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>Project</h2>
+          <p>
+            We believe that homes are a reflection of the people who live
+            inside, where everything looks and works the way you want it to.
+            That’s why we’ve gathered tons of different home ideas, from home
+            decoration ideas to organizing tips, to help you build your ideal
+            home.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for i in pro %}
+      <div class="col-lg-4 col-md-6">
+        <div class="Berger_Home_Diaries_content">
+          <div class="img">
+            <img src="{{i.image.url}}" class="img-fluid" alt="" />
+
+            <div class="text">
+              <a href="{{i.get_url}}">{{i.name}}</a>
+              <p>{{i.desc}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START ABOUT PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------my about-->
+
+<!--------end my about-->>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>ABOUT</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d_flex">
+      <div class="col-lg-6 col-md-6">
+        <div class="about_content">
+          <div class="img">
+            <img
+              src="https://bdcccl.com/frontend_assets/images/about.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div class="about_content">
+          <h4>Welcome to Cross Country Construction Limited</h4>
+
+          <h2>17 Years Experience</h2>
+
+          <p>
+            CrossCountry Construction Ltd is an ongoing independent ready mixed
+            concrete & Construction Company in Bangladesh. The company was
+            established in 2009 with participation from The Charm Ltd, Revenco,
+            MPCCL & TREL.
+          </p>
+
+          <p>
+            The company manufactures and supplies Ready Mix Concrete (RMC) and
+            Construction Service. Its portfolio of customers includes
+            construction companies, real estate developers, contractors,
+            infrastructure companies, Industrial Projects (Cement, Steel, Power
+            Plants, Amusement Park, Resorts, Hotel Building etc), Commercial
+            Projects and individuals owners.CCCL also produces special concrete
+            solutions using its world class infrastructure and technology and
+            ensures product and service quality.
+          </p>
+
+          <p>
+            Over the years, CCCL has established a reputation for being able to
+            deliver cost-effective and innovative Construction solutions
+            evolving nature of the industry, CCCL has consistently invested in
+            building and maintaining state-of-the-art R&D, manufacturing and
+            quality control infrastructure. It is this focus on quality and
+            innovation that has enabled CCCL to build a client base that
+            includes some of the most respected names from the Bangladesh Ready
+            Mix Concrete (RMC) and construction sector.
+          </p>
+
+          <p>
+            Having captured a significant share of the market in many parts of
+            Bangladesh, CCCL is now spreading its network to other locations in
+            Bangladesh to serve the requirements of the rapidly growing
+            Bangladesh’s construction industry.
+          </p>
+
+          <p>
+            CCCL is specially known for Construction Project based In-site
+            Concrete Batching Plant (Ready Mix Concrete) services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section_height"></div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Burger Express PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="Burger_Express">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_pert">
+          <h2>Get in touch</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <div class="Burger_Express_form">
+          <form action="{% url 'homepage'%}" method="POST">
+            {% csrf_token %} {% include 'includes/alert.html' %}
+            <input
+              type="hidden"
+              name="_token"
+              value="gE1anx2d48RXi3EMqNYAczebFyQf0JWLSmjT6ixy"
+            />
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="custome_group">
+                  <label> Name </label>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="custome_group">
+                  <label> Phone </label>
+                  <input
+                    type="text"
+                    placeholder="Your Phone"
+                    name="number"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="custome_group">
+                  <label> Email Address </label>
+                  <input
+                    type="text"
+                    placeholder="Your Email Address"
+                    name="email"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="custome_group">
+                  <label> Address </label>
+                  <input
+                    type="text"
+                    placeholder="Address"
+                    name="address"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="custome_group">
+                  <label> Message </label>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="custome_group">
+                  <div class="submit">
+                    <button type="submit">Submit Your Request</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% endblock %}
